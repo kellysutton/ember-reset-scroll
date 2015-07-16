@@ -1,25 +1,20 @@
-# Ember-cli-reset-scroll
+# ember-reset-scroll
 
-This README outlines the details of collaborating on this Ember addon.
+A very simple mixin to componentize the code found in [this cookbook](http://guides.emberjs.com/v1.10.0/cookbook/user_interface_and_interaction/resetting_scroll_on_route_changes/). Not the most useful thing at the moment, but ensures that should this pattern ever change, updating the mixin will solve the issue.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```
+$ ember install ember-reset-scroll
+```
 
-## Running
+## Usage
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+```javascript
+// In a route file
+import ResetScroll from 'ember-reset-scroll/mixins/reset-scroll';
 
-## Running Tests
-
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+export default Ember.Route.extend(ResetScroll, {
+  // The rest of your route.
+});
+```
