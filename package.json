@@ -1,6 +1,6 @@
 {
-  "name": "ember-cli-reset-scroll",
-  "version": "0.0.0",
+  "name": "ember-reset-scroll",
+  "version": "0.1.0",
   "description": "The default blueprint for ember-cli addons.",
   "directories": {
     "doc": "doc",
@@ -37,7 +37,11 @@
     "ember-try": "0.0.6"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "ember",
+    "ember-cli",
+    "imgix",
+    "kellysutton"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.0.0"
